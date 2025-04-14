@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var Jogador="Jalin";
+	var Vidas=3;
+	var Pedras=100;
+	var Pontos=0;
+
+	document.write("Nome:<span style='color:#d742f5'>" + Jogador + "</span><br>");
+
+	document.write("Vidas:<span style='color:#4287f5'>" + Vidas   + "</span><br>");
+
+	document.write("Pedras:<span style='color:#42f5b3'>" + Pedras  + "</span><br>");
+
+	 document.write("Pontos:<span style='color:#e1f502'>" + (Pontos + (Vidas * 10)) + "</span><br>");
+
+
+</script>
+
+	<h1>VARIÁVEIS E CONSTANTES </h1>
+		<p>
+			É muito imortante em uma linguagem de programação poder armazenar dados de forrma temporária,
+			essa é a finção daaas variáveis, semore que precisar armazenar uma informação, vamos usar as variaveis,
+		    podemos inserir, remover ou alternar informação em variáveis.
+		</p>
+		<h1>VARIÁVEIS</h1>
+
+		<p>
+			Declarar variáveis em javascript é bem simples, diferente de linguagens tradicionais como C++,
+			em java não informamos o tipo de dados e por isso nãó precisamos de operações como typecast,
+		    basta usar a palavras reservada "var" e o nome da variáveis, veja a seguir o código básico se declarar uma variável.
+		</p>
+		<h1>CONST</h1>
+		<p>
+			Constantes tem uma diferença importante em relação as variaveis, elas não podem ser modificadas,
+			uma vez declarada a atribuida uma constante, seu valor mão pode mais ser modificado. A sintaxe de declaração
+			é mesma da variavel com exceção da palavra "var" que será´substituida pela palavra "const".
+		</p>
+       
+       <script>
+       	    const max=10;
+       	    const min=5;
+       	    document.write(max + "<br>" + min);
+       </script>
+       <br><br><br>
+       <h1>CAIXA DE MENSAGENS</h1>
+       <p>
+       	Uma otima forma de comunicação com o usuario ou uma forma alternativa de colher dados para nosso 
+       	programa são as caixas de mensagens, em javascript existem tres tipos diferentes, são eles alert, prompt e confirm.
+       </p>
+       <h1>ALERT</h1>
+       <p>
+       	A caixa de mensagem mais simples é a caixa "alert", mostra uma mensagem simples com um botão OK, o
+       	comando é bem simples, basta inserir o conteúdo que será mostrado na caixa de texto dentro dos parênteses.
+       </p>
+       <script type="text/javascript">
+       	alert("texto texto texto");
+       </script>
+       <h1>PROMPT</h1>
+       <p>
+       	A caixa de mensagem prompt se diferencia por possibilitar a entrada de texto, permitindo que esse texto seja coletado 
+       	e passado a uma variável, desta maneira é a forma de coletar dados externos.
+       </p>
+       <script>
+       	var nome;
+       	nome=prompt("Por favor digite seu nome","Digite seu nome aqui");
+       	document.write(nome);
+       </script>
+       <h1>CONFIRM</h1>
+       <p>
+       	A caixa de mensagem confirme se particulariza por apresentar uma mensagem simples, dois botões OK e Cancelar.
+       	Mas sua funcionalidade mais importante é o retorno de qual dos botões foi pressionado, caso seja clicado
+       	em OK a caixa retorna o valor "true" e caso seja clicado Cancelar a caixa retorna o valor "false", simples assim.
+       </p>
+       <script type="text/javascript">
+       	var entrada;
+       	entrada=confirm(^"você é maior de idade?");
+       	document.write(entrada);
+       </script>
+       <p>
+       	Criamos uma variavel chamada "entrada" sem valor definido. Usamos a variáveis opc para receber do método
+       	confirm, lembre-se, se o botão OK for clicado o método retorna "true" (verdadeiro) e se Cancelar for clicado o retorno
+       	"false" (falso).
+       </p>
+       <h1>ESTRUTURA DE DECISÃO IF</h1>
+    <p>
+        Em qualquer lugar de programação é extremamente importante 
+        podermos analizar um certo conteúdo ou resultado para direcionar
+        a execução do nosso programa e determinar uma rotina ou outra a 
+        ser executada.
+    </p>
+        <h1>IF</h1>
+    <p>
+        A principal estrutura de decisão em programação é definida 
+        pelo comando IF, que traduzindo do inglês é SE.
+    </p>
+    <p>
+        Nessa sintaxe o IF verifica dp "teste lógico" e se for 
+        verdadeiro "true" ele executa os comandos entre suas
+        chaves {}, caso contrário, se for falso, os comandos 
+        não serão executados e pulará para a proxima instrução
+        após o IF.
+        <h3>O que é o "teste lógico"?</h3>
+        Basicamente o comando IF necessita de uma expressão que
+        retorne "verdadeiro (true)" ou "falso (false)" e estes são 
+        os valores de retorno de qualquer teste lógico, basicamente
+        é uma comparação que usa os operadores lógicos <, >, >=, <=, !=, ==.
+    </p>
+
+     <script>
+         var vidas=1;
+         if(vidas > 2){
+            document.write("jogador vivo")
+         }
+         if(vidas < 0){
+            document.write("jogador morrido")
+         }
+         if(vidas == 1){
+            document.write("jogador quase morto")
+         }
+     </script>
+           <br>                           <br>
+        operador                         nome
+          <br>                             <br>
+        >                                Maior
+        <br>                              <br>
+        <                                menor
+         <br>                              <br>
+        >=                               Maior ou igual
+          <br>                             <br>
+        <=                               Menor ou igual
+          <br>                              <br>
+        !=                               Diferente
+          <br>                              <br>
+        ==                               Igualdade
+
+</body>
+</html>
+	
